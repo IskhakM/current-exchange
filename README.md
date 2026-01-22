@@ -28,16 +28,14 @@ cp .env.example .env
 Отредактируйте .env при необходимости:
 
 ```env
-# Django
-SECRET_KEY=ваш-секретный-ключ  # сгенерируйте новый!
-DEBUG=False                     # для продакшена установите False
 
-# Database
+SECRET_KEY=ваш-секретный-ключ  
+DEBUG=False                     
+
 POSTGRES_DB=exchange_db
 POSTGRES_USER=exchange_user
 POSTGRES_PASSWORD=ваш_пароль
 
-# CBR API (обычно менять не нужно)
 CBR_API_URL=https://www.cbr-xml-daily.ru/daily_json.js
 ```
 3. Запуск через Docker
